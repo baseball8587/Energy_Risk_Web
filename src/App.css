@@ -6,11 +6,64 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* General button styling */
+.cool-animate-button {
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  background-color: #007bff; /* Primary color */
+  color: #ffffff; /* Text color */
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover and focus styles for the button */
+.cool-animate-button:hover,
+.cool-animate-button:focus {
+  background-color: #0056b3; /* Darker shade for interaction */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Ensure other form elements align well with the new button style */
+input[type="text"].rounded-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.rounded-input {
+  border: 1px solid #ccc; /* Example border color */
+  border-radius: 15px; /* This creates the rounded corners */
+  padding: 10px; /* Add some padding inside the input box */
+  width: 250px; /* Set a width for your input */
+  outline: none; /* Removes the default focus outline */
+  margin-right: 10px; /* Adds margin to the right of the input */
+}
+
+.rounded-input:focus {
+  border-color: #004a70; /* Changes the border color when the input is focused */
+}
+
+.submit-button {
+  border-radius: 15px; /* Match the input field's border radius */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  background-color: #004a70; /* Example button background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.submit-button:hover {
+  background-color: #003355; /* Darker background on hover */
 }
 
 .App-header {
