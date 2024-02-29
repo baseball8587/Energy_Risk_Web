@@ -1,10 +1,10 @@
 import React from 'react';
-import Map from './map.tsx'; 
+import Zipcode from './Zipcode.tsx'; 
 import backgroundImage from './images/background.png'; // Adjust the path as necessary
 
 function App() {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ fontFamily: 'Libre Franklin' }}>
       <header style={{ backgroundColor: '#004a70', padding: '20px', color: 'white', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>Energy Risk</div>
         <nav>
@@ -16,18 +16,18 @@ function App() {
           <a href="opt_6" style={{ color: 'white', marginLeft: '20px' }}>Español</a>
         </nav>
       </header>
-      <main style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', height: '100vh' }}>
+      <main style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
         <h1 style={{ color: '#004a70' }}>Finding Electric Rates is Easier Than Ever</h1>
         <p>Enter your zip code to instantly compare electricity plans for your home in Pennsylvania.</p>
         
-        {/* Insert the Map component where the form used to be */}
-        <Map />
+        <Zipcode />
         
         {/* Other content can remain as is or be adjusted based on your layout needs */}
-        <a href="#">Learn about business plans →</a>
+        {/* <a href="#">Learn about business plans →</a> */}
       </main>
     </div>
   );
 }
+
 
 export default App;

@@ -36,13 +36,51 @@ input[type="text"].rounded-input {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 1s linear;
   }
 }
+.distributor-card {
+  width: 90%; /* For smaller devices */
+  max-width: 600px; /* Maximum width */
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.distributor-card {
+  animation: fadeIn 1s;
+}
+
+.distributor-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 75%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.distributor-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.distributor-name {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.distributor-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
 
 .rounded-input {
   border: 1px solid #ccc; /* Example border color */
-  border-radius: 15px; /* This creates the rounded corners */
+  border-radius: 35px; /* This creates the rounded corners */
   padding: 10px; /* Add some padding inside the input box */
   width: 250px; /* Set a width for your input */
   outline: none; /* Removes the default focus outline */

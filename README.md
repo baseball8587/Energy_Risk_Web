@@ -72,3 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 npm install @react-google-maps/api
+
+pip install Flask
+
+pip install flask-cors
