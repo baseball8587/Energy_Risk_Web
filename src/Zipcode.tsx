@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Ensure this path is correct for your project structure
+import '/Users/colinjacobs/Desktop/fun/CapstoneWeb/Energy_Risk_Web/energyrisk/src/App.css'; 
 
 const Zipcode = () => {
   const [zipCode, setZipCode] = useState('');//State to hold the Zipcode

@@ -76,3 +76,9 @@ npm install @react-google-maps/api
 pip install Flask
 
 pip install flask-cors
+
+npm install react-router-dom leaflet react-leaflet
+
+npm install react-cookie
+
+pip install geopy
